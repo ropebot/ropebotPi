@@ -4,9 +4,9 @@ Description=ropebotpi
 [Service]
 User=root
 Group=root
-WorkingDirectory=/root/ropebotpi/
-ExecStart=/root/ropebotpi/start.sh
-SyslogIdentifier=ropebotpi
+WorkingDirectory=/root/ropebotPi/
+ExecStart=/root/ropebotPi/start.sh
+SyslogIdentifier=ropebotPi
 Restart=on-failure
 RestartSec=5
 
