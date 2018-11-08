@@ -24,7 +24,7 @@ class ropebot {
         let command;
 
         // moving x
-        command = `MOV,${Math.abs(self.motor1) || 0},${self.motor1/Math.abs(self.motor1) || 0},0,0`
+        command = `MOV,${Math.abs(self.motor1) || 0},${self.motor1/Math.abs(self.motor1) || 0},0,0\n`
         // console.log(command)
         port.write('MOV,11300,-1,0,0');
         port.write(command, function(err) {
@@ -35,7 +35,7 @@ class ropebot {
         });
         // send that command
         // wait
-        let command1 = `MOV,${Math.abs(self.motors23) || 0},0,${self.motors23/Math.abs(self.motors23) || 0},${self.motors23/Math.abs(self.motors23) || 0}`
+        let command1 = `MOV,${Math.abs(self.motors23) || 0},0,${self.motors23/Math.abs(self.motors23) || 0},${self.motors23/Math.abs(self.motors23) || 0}\n`
         // console.log(command)
         port.write(command1, function(err) {
             if (err) {
