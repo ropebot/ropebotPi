@@ -26,6 +26,7 @@ class ropebot {
         // moving x
         command = `MOV,${Math.abs(self.motor1) || 0},${self.motor1/Math.abs(self.motor1) || 0},0,0`
         // console.log(command)
+        port.write('MOV,11300,-1,0,0');
         port.write(command, function(err) {
             if (err) {
               return console.log('Error on write: ', err.message);
