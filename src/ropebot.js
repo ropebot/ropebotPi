@@ -46,7 +46,7 @@ class ropebot {
             });
             self.motor1 = 0
             self.motors23 = 0
-        },3000);
+        },300);
     }
 }
 
