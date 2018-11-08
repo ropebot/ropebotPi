@@ -43,6 +43,8 @@ class ropebot {
               return console.log('Error on write: ', err.message);
             }
             console.log(command);
+            if(self.motor1 === 0)self.motors23 = 0;
+            else self.motor1 = 0
         });
         // setTimeout(function(){
         //     port.write(command1, function(err) {
