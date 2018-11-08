@@ -1,0 +1,14 @@
+[Unit]
+Description=ropebotpi
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/root/ropebotpi/
+ExecStart=/root/ropebotpi/start.sh
+SyslogIdentifier=ropebotpi
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

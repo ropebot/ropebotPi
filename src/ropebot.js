@@ -34,13 +34,13 @@ class ropebot {
         });
         // send that command
         // wait
-        command = `MOV,${Math.abs(self.motors23) || 0},0,${self.motors23/Math.abs(self.motors23) || 0},${self.motors23/Math.abs(self.motors23) || 0}`
-        console.log(command)
-        port.write(command, function(err) {
+        let command1 = `MOV,${Math.abs(self.motors23) || 0},0,${self.motors23/Math.abs(self.motors23) || 0},${self.motors23/Math.abs(self.motors23) || 0}`
+        // console.log(command)
+        port.write(command1, function(err) {
             if (err) {
               return console.log('Error on write: ', err.message);
             }
-            console.log(command);
+            console.log(command1);
         });
     }
 }
