@@ -77,7 +77,7 @@ updatemodules()
 {
 	#yarn add  node-html-encoder
 	#yarn add string_decoder
-	yarn install
+	npm install
 }
 
 
@@ -98,7 +98,7 @@ main()
 	rm -f sed*
 	gitpull
 	#setdate
-	updatemodules	#yarn should not install modules that are already present
+	# updatemodules	#yarn should not install modules that are already present
 	node index.js
 }
 
